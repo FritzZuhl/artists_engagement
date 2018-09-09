@@ -7,8 +7,8 @@ library(bigrquery, warn.conflicts = FALSE, quietly = TRUE)
 # library(googleAuthR)
 set_service_token("/opt/etc/google_creds.json")
 
-# home_dir <- "/home/fritz_zuhl"
-home_dir <- "/home/push"
+home_dir <- "/home/fritz_zuhl"
+# home_dir <- "/home/push"
 
 setwd(paste(home_dir, "/artists_engagement", sep=""))
 

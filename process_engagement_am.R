@@ -2,7 +2,8 @@
 # Engagement
 # ENG-571, 730
 
-home_dir <- "/home/push"
+home_dir <- "/home/fritz_zuhl"
+# home_dir <- "/home/push"
 
 platform <- "apple_music" # ENG-730
 # platform <- "spotify" # ENG-571
