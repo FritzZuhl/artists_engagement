@@ -29,7 +29,7 @@ if (platform == "spotify") {
 d1 <- plyr::rename(d, renames)
 d2 <- d1[complete.cases(d1),]
 
-source(paste(home_dir, "/engagement_scripts/engagement.R", sep=""))
+source(paste(home_dir, "/artists_engagement/engagement.R", sep=""))
 
 
 this_data <- d2

@@ -10,7 +10,7 @@ set_service_token("/opt/etc/google_creds.json")
 # home_dir <- "/home/fritz_zuhl"
 home_dir <- "/home/push"
 
-setwd(paste(home_dir, "/artists_engagement", sep=""))
+setwd(paste(home_dir, "/engagement_scripts", sep=""))
 
 # proj <- 'tommy-boy'
 # ds_spot <- "spotify_analytics"
