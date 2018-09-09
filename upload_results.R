@@ -5,7 +5,8 @@ library(bigrquery, warn.conflicts = FALSE, quietly = TRUE)
 
 set_service_token("/opt/etc/google_creds.json")
 
-home_dir <- "/home/push"
+# home_dir <- "/home/push"
+home_dir <- "/home/fritz_zuhl"
 
 load(paste(home_dir, "/data/out_am.RData", sep=""))
 res.df_am <- res.df
