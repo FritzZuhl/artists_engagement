@@ -4,6 +4,7 @@
 
 
 library(bigrquery, warn.conflicts = FALSE, quietly = TRUE)
+library(lubridate, warn.conflicts = FALSE, quietly = TRUE)
 # library(googleAuthR)
 set_service_token("/opt/etc/google_creds.json")
 
