@@ -32,8 +32,12 @@ d2 <- d1[complete.cases(d1),]
 
 source(paste(home_dir, "/artists_engagement/engagement.R", sep=""))
 
+# ad hoc dedup 
+d2$timestamp_rounded <- round_date(d2$timestamp, unit="minute")
+tmp <- d2[c("listener_id", "timestamp_rounded")]
+d3 <- d2[!duplicated(tmp),]
 
-this_data <- d2
+this_data <- d3
 a <- unique(this_data$artist_id)
 res <- vector(mode="list", length=length(a))
 for (i in 1:length(a)) {
