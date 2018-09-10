@@ -22,7 +22,7 @@ if (platform == "apple_music") {
   # setwd("~/ENG_730")
   load(paste(home_dir, "/data/analytic_dataset_am_Past30d.RData", sep=""))
   
-  d <- dplyr::tbl_df(analytic_dataset_am_Past30d)
+  d <- dplyr::tbl_df(d)
   renames <- c("anonymized_person_id" = "listener_id")
 }
 
@@ -30,7 +30,7 @@ if (platform == "spotify") {
   # setwd("~/ENG_571")
   load(paste(home_dir, "/data/analytic_dataset_spot_Past30d.RData", sep=""))
 
-  d <- dplyr::tbl_df(analytic_dataset_spot_Past30d)
+  d <- dplyr::tbl_df(d)
   renames <- c("streams_user_id" = "listener_id", "streams_timestamp" = "timestamp") # for spot
 }
 

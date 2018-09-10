@@ -17,13 +17,13 @@ library(lubridate, quietly = TRUE, verbose = FALSE, warn.conflicts = FALSE)
 
 if (platform == "apple_music") {
   load(paste(home_dir, "/data/analytic_dataset_am_Past30d.RData", sep=""))
-  d <- dplyr::tbl_df(analytic_dataset_am_Past30d)
+  d <- dplyr::tbl_df(d)
   renames <- c("anonymized_person_id" = "listener_id")
 }
 
 if (platform == "spotify") {
   load(paste(home_dir, "/data/analytic_dataset_spot_Past30d.RData", sep=""))
-  d <- dplyr::tbl_df(analytic_dataset_spot_Past30d)
+  d <- dplyr::tbl_df(d)
   renames <- c("streams_user_id" = "listener_id", "streams_timestamp" = "timestamp") # for spot
 }
 
